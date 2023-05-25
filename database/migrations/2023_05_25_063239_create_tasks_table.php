@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('task_description');
             $table->foreignId('status_id');
             $table->timestamp('add_date');
-            $table->timestamp('completed_date');
+            $table->timestamp('completed_date')->nullable();
         });
     }
 

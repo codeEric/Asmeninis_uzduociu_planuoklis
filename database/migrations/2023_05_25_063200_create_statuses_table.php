@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('statuses', function (Blueprint $table) {
             $table->tinyIncrements('id');
-            $table->timestamps();
+            $table->string('name', 16);
         });
     }
 
